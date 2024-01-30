@@ -49,7 +49,7 @@ export default function AuthorDetails({ navigation,route }) {
        </View>
        <View style={styles.comicContainer}>
           <View style={styles.comicTopContainer}>
-            <Text style={styles.sideText}>Comic</Text>
+            < style={styles.sideText}>Comic</>
             <TouchableOpacity style={styles.moreImageContainer}>
               <Image source={require("../../assets/images/More.png")} style={styles.comicMoreImage} />
             </TouchableOpacity>
