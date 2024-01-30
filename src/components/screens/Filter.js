@@ -91,10 +91,12 @@ export default function Filter({ navigation }) {
             </TouchableOpacity>
             </View>
         <View style={styles.dropDownContainer}>
-            <TouchableOpacity style={styles.dropDownInnerContainer}>
+            <View style={styles.dropDownInnerContainer}>
                 <Text style={styles.leftText}>All comic</Text>
-                <DownArrowIcon width={26} height={26} />
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.downArrowContainer}>
+                    <DownArrowIcon width={26} height={26} />
+                </TouchableOpacity>
+            </View>
         </View>
         <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.comicContainer}>
             {renderComicItem()}
@@ -178,6 +180,8 @@ const styles = StyleSheet.create({
     leftText: {
         fontSize: 17,
         fontFamily: 'Ubuntu-Regular',
+    },
+    downArrowContainer: {
     },
     comicContainer: {
         paddingVertical: 20,
